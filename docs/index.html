@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Camera-LiDAR Consistent Neural Radiance Fields</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Camera-LiDAR Consistent Neural Radiance Fields</h1>
+      <p><strong>Authors:</strong> Chao Hou¹, Fu Zhang¹†</p>
+      <p><strong>Institution:</strong> ¹ The University of Hong Kong, China</p>
+      <p><strong>Contact:</strong> houchao@connect.hku.hk, fuzhang@hku.hk</p>
+    </header>
 
+    <section>
+      <h2>Abstract</h2>
+      <p>
+        Neural Radiance Fields (NeRFs) have become a leading technique for novel view synthesis, with promising applications in robotics. However, due to shape-radiance ambiguity, NeRFs often require additional depth inputs for regularization in outdoor scenarios. LiDAR provides accurate depth measurements, but current methods typically combine only a few frames, resulting in sparse depth maps and discrepancies with camera images. The asynchronous nature of LiDAR, where each point is captured at a different timestamp, introduces depth inaccuracies when treated as simultaneous. These errors, along with inherent LiDAR noise, create inconsistencies that hinder reconstruction accuracy. To address these challenges, we propose a continuous-time framework for joint Camera-LiDAR optimization, enabling more consistent radiance field reconstruction and improving both view synthesis and geometric accuracy.
+      </p>
+    </section>
+
+    <section>
+      <h2>Demo Video</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/your_video_id" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <section>
+      <h2>Paper</h2>
+      <ul>
+        <li><a href="./paper.pdf">[Paper]</a></li>
+        <li><a href="./paper.pdf" download>[Download Paper]</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Pipeline</h2>
+      <img src="images/pipeline1.png" alt="Pipeline Step 1" />
+      <img src="images/pipeline2.png" alt="Pipeline Step 2" />
+    </section>
+
+    <section>
+      <h2>Results</h2>
+      <img src="images/result1.png" alt="result1" />
+      <img src="images/result2.png" alt="result2" />
+    </section>
+
+    <footer>
+      <p>Contact: houchao@connect.hku.hk, fuzhang@hku.hk</p>
+    </footer>
+  </div>
+</body>
+</html>
